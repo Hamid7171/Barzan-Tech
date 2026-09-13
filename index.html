@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern websites, mobile apps and custom software built to drive business growth.">
+  <title>Digital Agency | Build Digital Products That Drive Business Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#06275f;--blue:#0878ff;--cyan:#12d8ff;--text:#10254d;--muted:#5e6d86;--light:#f5f9ff;--white:#fff;--shadow:0 18px 50px rgba(10,55,120,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+    .topbar{background:#06275f;color:#fff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:20px}
+    nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7eef8}
+    .navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Plus Jakarta Sans";font-weight:800;font-size:22px;color:var(--navy);display:flex;align-items:center;gap:10px}
+    .brandmark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#fff;font-weight:800}
+    .links{display:flex;gap:28px;font-weight:600;font-size:14px}.links a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;border:0;cursor:pointer;transition:.2s}
+    .btn-primary{background:linear-gradient(135deg,#0878ff,#00bfe9);color:#fff;box-shadow:0 10px 24px rgba(0,130,255,.22)}.btn-primary:hover{transform:translateY(-2px)}
+    .hero{padding:82px 0 72px;background:radial-gradient(circle at 80% 15%,#dff5ff 0,transparent 34%),linear-gradient(180deg,#f7fbff,#fff)}
+    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:55px}.eyebrow{display:inline-block;background:#e8f4ff;color:#0868d8;border-radius:999px;padding:8px 13px;font-weight:800;font-size:12px;letter-spacing:.5px}
+    h1{font-family:"Plus Jakarta Sans";font-size:clamp(40px,5vw,66px);line-height:1.06;margin:18px 0;color:#06275f;letter-spacing:-2px}h1 span{color:#08a9e6}
+    .hero p{font-size:18px;color:var(--muted);max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+    .trust{display:flex;gap:24px;flex-wrap:wrap;color:#50617b;font-size:13px;font-weight:600}.trust span{display:flex;align-items:center;gap:7px}
+    .visual{position:relative}.visual img{width:100%;display:block;border-radius:24px;box-shadow:var(--shadow);border:1px solid #dbe9fa}.badge{position:absolute;left:-22px;bottom:22px;background:#fff;border-radius:16px;padding:15px 18px;box-shadow:var(--shadow);font-weight:800;color:var(--navy);font-size:14px}
+    section{padding:82px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-family:"Plus Jakarta Sans";font-size:36px;line-height:1.15;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid #e2ebf7;border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(16,60,120,.05)}.icon{width:48px;height:48px;border-radius:14px;background:#eaf5ff;color:#0878ff;display:grid;place-items:center;font-size:23px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .dark{background:#06275f;color:#fff}.dark .section-head h2{color:#fff}.dark .section-head p{color:#c6d5ed}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:25px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.06)}.num{font-size:13px;color:#5de3ff;font-weight:800}.step h3{margin:8px 0 5px}.step p{color:#c6d5ed;font-size:14px;margin:0}
+    .industries{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.pill{padding:11px 17px;border:1px solid #dce8f6;border-radius:999px;background:#fff;font-weight:700;font-size:13px;color:#294467}
+    .cta{padding:60px 0;background:linear-gradient(135deg,#eaf8ff,#f7fbff)}.cta-box{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-family:"Plus Jakarta Sans";font-size:34px;margin:0;color:var(--navy)}.cta p{margin:7px 0 0;color:var(--muted)}
+    footer{background:#041b42;color:#cbd8ec;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
+    .mobile{display:none}
+    @media(max-width:850px){.links{display:none}.mobile{display:block}.hero{padding:55px 0}.hero-grid{grid-template-columns:1fr;gap:35px}.badge{left:12px}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.cta-box{flex-direction:column;align-items:flex-start}}
+    @media(max-width:560px){.topbar{display:none}.navin{height:64px}.brand{font-size:18px}.hero h1{font-size:41px;letter-spacing:-1.4px}.hero p{font-size:16px}.cards,.process{grid-template-columns:1fr}section{padding:60px 0}.section-head h2,.cta h2{font-size:29px}.visual img{border-radius:16px}.badge{font-size:12px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Ideas • Design • Development • Growth</span><span>Let's build something great.</span></div></div>
+
+  <nav><div class="container navin">
+    <a class="brand" href="#"><span class="brandmark">△</span> DIGITAL AGENCY</a>
+    <div class="links"><a href="#services">Services</a><a href="#process">Process</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
+    <a class="btn btn-primary mobile" href="https://wa.me/917676144093?text=Hi%20I%20have%20a%20project%20idea.%20I%20would%20like%20to%20discuss%20it.">Get Started</a>
+  </div></nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">MODERN • RELIABLE • BUSINESS-FOCUSED</span>
+          <h1>Your Vision. Our Expertise.<br><span>Digital Growth.</span></h1>
+          <p>We build modern websites, mobile apps and custom software that help businesses establish a strong digital presence, streamline operations and grow.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Discuss Your Project →</a>
+            <a class="btn" style="border:1px solid #d7e4f4;background:#fff" href="https://wa.me/917676144093?text=Hi%20I%20would%20like%20a%20free%20project%20consultation.">WhatsApp Us</a>
+          </div>
+          <div class="trust"><span>✓ Custom-built solutions</span><span>✓ Scalable technology</span><span>✓ End-to-end support</span></div>
+        </div>
+        <div class="visual">
+          <img src="advertisement-reference.jpg" alt="Digital agency services and digital product development">
+          <div class="badge">💡 From idea to digital product</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><h2>What We Build</h2><p>Practical digital solutions designed around your business goals — not just technology for technology's sake.</p></div>
+        <div class="cards">
+          <div class="card"><div class="icon">🌐</div><h3>Web Applications</h3><p>Fast, secure and user-friendly web applications built for real business needs.</p></div>
+          <div class="card"><div class="icon">🏢</div><h3>Business Websites</h3><p>Professional corporate websites that build trust and turn visitors into enquiries.</p></div>
+          <div class="card"><div class="icon">🛒</div><h3>eCommerce Platforms</h3><p>Conversion-focused online stores with smooth customer journeys and easy management.</p></div>
+          <div class="card"><div class="icon">📊</div><h3>Admin Dashboards</h3><p>Centralized dashboards and management systems to help you control your operations.</p></div>
+          <div class="card"><div class="icon">📱</div><h3>Mobile Applications</h3><p>iOS and Android applications designed for performance, usability and growth.</p></div>
+          <div class="card"><div class="icon">⚙️</div><h3>Custom Software</h3><p>Software solutions tailored to your workflow, customers and business objectives.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark" id="process">
+      <div class="container">
+        <div class="section-head"><h2>From Idea to Digital Product</h2><p>A clear process keeps your project focused, transparent and moving forward.</p></div>
+        <div class="process">
+          <div class="step"><div class="num">01 — DISCOVERY</div><h3>Understand</h3><p>We learn your goals, users, requirements and business challenges.</p></div>
+          <div class="step"><div class="num">02 — DESIGN</div><h3>Plan & Prototype</h3><p>We shape the user experience and create a clear solution direction.</p></div>
+          <div class="step"><div class="num">03 — DEVELOP</div><h3>Build</h3><p>Our technical team engineers, tests and refines the solution.</p></div>
+          <div class="step"><div class="num">04 — LAUNCH</div><h3>Deploy & Support</h3><p>We launch the product and support you as it grows.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="container">
+        <div class="section-head"><h2>Who We Help</h2><p>Ideal for businesses that want to turn an idea, challenge or opportunity into a digital solution.</p></div>
+        <div class="industries">
+          <span class="pill">🚀 Startups</span><span class="pill">📈 Small & Medium Businesses</span><span class="pill">🍽️ Restaurants</span><span class="pill">🏪 Retailers</span><span class="pill">🧑‍💼 Service Businesses</span><span class="pill">🛍️ E-commerce Brands</span><span class="pill">🏢 Enterprises</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-box">
+        <div><h2>Have a Project Idea?</h2><p>Let's turn your idea into a powerful digital solution.</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://wa.me/917676144093?text=Hi%20Digital%20Agency,%20I%20have%20a%20project%20idea.%20Please%20contact%20me.">Start a Conversation</a>
+          <a class="btn" style="background:#fff;border:1px solid #d7e4f4" href="tel:+917676144093">Call +91 76761 44093</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container foot"><span>© 2026 Digital Agency. All rights reserved.</span><span>Ideas | Design | Development | Growth</span></div></footer>
+</body>
+</html>
