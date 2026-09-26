@@ -1,116 +1,1659 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modern websites, mobile apps and custom software built to drive business growth.">
-  <title>Barzan Tech | Build Digital Products That Drive Business Growth</title>
+
+  <meta name="description" content="Barzan Tech helps businesses grow online through digital marketing, SEO, social media, websites, branding and technology solutions.">
+
+  <title>Barzan Tech | Digital Marketing & Technology Solutions</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--navy:#06275f;--blue:#0878ff;--cyan:#12d8ff;--text:#10254d;--muted:#5e6d86;--light:#f5f9ff;--white:#fff;--shadow:0 18px 50px rgba(10,55,120,.12)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-    a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
-    .topbar{background:#06275f;color:#fff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:20px}
-    nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7eef8}
-    .navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Plus Jakarta Sans";font-weight:800;font-size:22px;color:var(--navy);display:flex;align-items:center;gap:10px}
-    .brandmark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#fff;font-weight:800}
-    .links{display:flex;gap:28px;font-weight:600;font-size:14px}.links a:hover{color:var(--blue)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;border:0;cursor:pointer;transition:.2s}
-    .btn-primary{background:linear-gradient(135deg,#0878ff,#00bfe9);color:#fff;box-shadow:0 10px 24px rgba(0,130,255,.22)}.btn-primary:hover{transform:translateY(-2px)}
-    .hero{padding:82px 0 72px;background:radial-gradient(circle at 80% 15%,#dff5ff 0,transparent 34%),linear-gradient(180deg,#f7fbff,#fff)}
-    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:55px}.eyebrow{display:inline-block;background:#e8f4ff;color:#0868d8;border-radius:999px;padding:8px 13px;font-weight:800;font-size:12px;letter-spacing:.5px}
-    h1{font-family:"Plus Jakarta Sans";font-size:clamp(40px,5vw,66px);line-height:1.06;margin:18px 0;color:#06275f;letter-spacing:-2px}h1 span{color:#08a9e6}
-    .hero p{font-size:18px;color:var(--muted);max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
-    .trust{display:flex;gap:24px;flex-wrap:wrap;color:#50617b;font-size:13px;font-weight:600}.trust span{display:flex;align-items:center;gap:7px}
-    .visual{position:relative}.visual img{width:100%;display:block;border-radius:24px;box-shadow:var(--shadow);border:1px solid #dbe9fa}.badge{position:absolute;left:-22px;bottom:22px;background:#fff;border-radius:16px;padding:15px 18px;box-shadow:var(--shadow);font-weight:800;color:var(--navy);font-size:14px}
-    section{padding:82px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-family:"Plus Jakarta Sans";font-size:36px;line-height:1.15;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid #e2ebf7;border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(16,60,120,.05)}.icon{width:48px;height:48px;border-radius:14px;background:#eaf5ff;color:#0878ff;display:grid;place-items:center;font-size:23px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
-    .dark{background:#06275f;color:#fff}.dark .section-head h2{color:#fff}.dark .section-head p{color:#c6d5ed}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:25px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.06)}.num{font-size:13px;color:#5de3ff;font-weight:800}.step h3{margin:8px 0 5px}.step p{color:#c6d5ed;font-size:14px;margin:0}
-    .industries{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.pill{padding:11px 17px;border:1px solid #dce8f6;border-radius:999px;background:#fff;font-weight:700;font-size:13px;color:#294467}
-    .cta{padding:60px 0;background:linear-gradient(135deg,#eaf8ff,#f7fbff)}.cta-box{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-family:"Plus Jakarta Sans";font-size:34px;margin:0;color:var(--navy)}.cta p{margin:7px 0 0;color:var(--muted)}
-    footer{background:#041b42;color:#cbd8ec;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
-    .mobile{display:none}
-    @media(max-width:850px){.links{display:none}.mobile{display:block}.hero{padding:55px 0}.hero-grid{grid-template-columns:1fr;gap:35px}.badge{left:12px}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.cta-box{flex-direction:column;align-items:flex-start}}
-    @media(max-width:560px){.topbar{display:none}.navin{height:64px}.brand{font-size:18px}.hero h1{font-size:41px;letter-spacing:-1.4px}.hero p{font-size:16px}.cards,.process{grid-template-columns:1fr}section{padding:60px 0}.section-head h2,.cta h2{font-size:29px}.visual img{border-radius:16px}.badge{font-size:12px}}
-  </style>
-</head>
-<body>
-  <div class="topbar"><div class="container"><span>Ideas • Design • Development • Growth</span><span>Let's build something great.</span></div></div>
 
-  <nav><div class="container navin">
-    <a class="brand" href="#"><span class="brandmark">△</span> BARZAN TECH</a>
-    <div class="links"><a href="#services">Services</a><a href="#process">Process</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
-    <a class="btn btn-primary mobile" href="https://wa.me/917676144093?text=Hi%20I%20have%20a%20project%20idea.%20I%20would%20like%20to%20discuss%20it.">Get Started</a>
-  </div></nav>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* =========================
+       GLOBAL
+    ========================= */
+
+    :root {
+      --navy: #071b45;
+      --blue: #1769ff;
+      --cyan: #00c8ff;
+      --purple: #7c3aed;
+      --pink: #ec4899;
+      --orange: #ff7a18;
+
+      --text: #10254d;
+      --muted: #64748b;
+      --light: #f6f8ff;
+      --white: #ffffff;
+
+      --border: #e7eaf3;
+
+      --shadow: 0 20px 60px rgba(32, 55, 120, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: #061536;
+      color: #dbe7ff;
+      font-size: 13px;
+      padding: 9px 0;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(220, 226, 240, 0.8);
+    }
+
+    .navin {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .brandmark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      color: white;
+      font-weight: 800;
+
+      background: linear-gradient(
+        135deg,
+        var(--blue),
+        var(--purple),
+        var(--pink)
+      );
+
+      box-shadow: 0 10px 25px rgba(105, 60, 230, 0.28);
+    }
+
+    .links {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .links a {
+      transition: 0.25s;
+    }
+
+    .links a:hover {
+      color: var(--purple);
+    }
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      padding: 13px 21px;
+
+      border-radius: 12px;
+
+      font-weight: 700;
+      font-size: 14px;
+
+      border: 0;
+      cursor: pointer;
+
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      color: white;
+
+      background: linear-gradient(
+        135deg,
+        #1769ff,
+        #7137f5,
+        #ec4899
+      );
+
+      box-shadow: 0 12px 30px rgba(91, 70, 230, 0.28);
+    }
+
+    .btn-secondary {
+      background: white;
+      border: 1px solid #dbe2f0;
+      color: var(--navy);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 95px 0 90px;
+
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(23, 105, 255, 0.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(236, 72, 153, 0.15),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 70% 90%,
+          rgba(124, 58, 237, 0.13),
+          transparent 30%
+        ),
+        #f8faff;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+
+      width: 350px;
+      height: 350px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(
+        135deg,
+        rgba(0, 200, 255, 0.18),
+        rgba(124, 58, 237, 0.12)
+      );
+
+      filter: blur(40px);
+
+      right: -120px;
+      top: 80px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+
+      align-items: center;
+
+      gap: 65px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      padding: 8px 14px;
+
+      border-radius: 999px;
+
+      background: #eef2ff;
+      color: #6236d9;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      letter-spacing: 0.5px;
+    }
+
+    .eyebrow::before {
+      content: "●";
+      color: #ec4899;
+      font-size: 9px;
+    }
+
+    h1 {
+      margin: 20px 0;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: clamp(42px, 5vw, 68px);
+
+      line-height: 1.04;
+
+      letter-spacing: -2.5px;
+
+      color: var(--navy);
+    }
+
+    h1 .gradient-text {
+      background: linear-gradient(
+        90deg,
+        #1769ff,
+        #7c3aed,
+        #ec4899
+      );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+
+      color: var(--muted);
+
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+
+      flex-wrap: wrap;
+
+      margin: 30px 0;
+    }
+
+    .trust {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 18px;
+
+      color: #52637e;
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .trust span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .check {
+      color: #16a34a;
+      font-weight: 900;
+    }
+
+    /* =========================
+       HERO VISUAL
+    ========================= */
+
+    .visual {
+      position: relative;
+    }
+
+    .visual img {
+      width: 100%;
+      display: block;
+
+      border-radius: 26px;
+
+      border: 7px solid white;
+
+      box-shadow: var(--shadow);
+    }
+
+    .visual::after {
+      content: "";
+
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      left: 18px;
+      top: 18px;
+
+      border-radius: 26px;
+
+      background: linear-gradient(
+        135deg,
+        #1769ff,
+        #7c3aed,
+        #ec4899
+      );
+
+      z-index: -1;
+      opacity: 0.22;
+    }
+
+    .floating-card {
+      position: absolute;
+
+      right: -25px;
+      bottom: 25px;
+
+      padding: 18px 20px;
+
+      border-radius: 18px;
+
+      background: rgba(255, 255, 255, 0.96);
+
+      box-shadow: var(--shadow);
+
+      font-weight: 800;
+
+      color: var(--navy);
+    }
+
+    .floating-card small {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 11px;
+
+      margin-top: 3px;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      margin-top: -35px;
+
+      position: relative;
+      z-index: 5;
+    }
+
+    .stats-box {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow: var(--shadow);
+
+      padding: 28px;
+
+      border: 1px solid #edf0f7;
+    }
+
+    .stat {
+      text-align: center;
+
+      border-right: 1px solid #e9edf5;
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+
+      font-family: "Plus Jakarta Sans";
+
+      font-size: 28px;
+
+      color: var(--navy);
+    }
+
+    .stat span {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      text-align: center;
+
+      max-width: 720px;
+
+      margin: 0 auto 45px;
+    }
+
+    .section-tag {
+      display: inline-block;
+
+      margin-bottom: 10px;
+
+      color: var(--purple);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 1px;
+    }
+
+    .section-head h2 {
+      font-family: "Plus Jakarta Sans";
+
+      font-size: 38px;
+
+      line-height: 1.15;
+
+      color: var(--navy);
+
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       SERVICE CARDS
+    ========================= */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .card {
+      position: relative;
+
+      padding: 30px;
+
+      border-radius: 22px;
+
+      background: white;
+
+      border: 1px solid var(--border);
+
+      box-shadow: 0 12px 35px rgba(30, 50, 100, 0.06);
+
+      overflow: hidden;
+
+      transition: 0.3s;
+    }
+
+    .card::before {
+      content: "";
+
+      position: absolute;
+
+      width: 100px;
+      height: 100px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(
+        135deg,
+        rgba(23, 105, 255, 0.12),
+        rgba(236, 72, 153, 0.08)
+      );
+
+      right: -40px;
+      top: -40px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+
+      box-shadow: 0 20px 50px rgba(42, 65, 130, 0.14);
+
+      border-color: #d7d9ff;
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 16px;
+
+      font-size: 25px;
+
+      margin-bottom: 20px;
+
+      background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #f5edff
+      );
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+
+      font-size: 19px;
+
+      color: var(--navy);
+    }
+
+    .card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    /* =========================
+       MARKETING HIGHLIGHT
+    ========================= */
+
+    .marketing {
+      background:
+        radial-gradient(
+          circle at 20% 10%,
+          rgba(23, 105, 255, 0.15),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 90%,
+          rgba(236, 72, 153, 0.15),
+          transparent 30%
+        ),
+        #f8f9ff;
+    }
+
+    .marketing-grid {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .marketing-content h2 {
+      font-family: "Plus Jakarta Sans";
+
+      font-size: 40px;
+
+      line-height: 1.15;
+
+      color: var(--navy);
+
+      margin-bottom: 15px;
+    }
+
+    .marketing-content p {
+      color: var(--muted);
+
+      margin-bottom: 25px;
+    }
+
+    .marketing-list {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 14px;
+    }
+
+    .marketing-item {
+      padding: 15px;
+
+      border-radius: 14px;
+
+      background: white;
+
+      border: 1px solid #e8eaf4;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      box-shadow: 0 8px 25px rgba(30, 40, 100, 0.05);
+    }
+
+    .marketing-item span {
+      margin-right: 7px;
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .dark {
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(23, 105, 255, 0.25),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(236, 72, 153, 0.2),
+          transparent 30%
+        ),
+        #061536;
+
+      color: white;
+    }
+
+    .dark .section-head h2 {
+      color: white;
+    }
+
+    .dark .section-head p {
+      color: #c8d4ec;
+    }
+
+    .process {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 15px;
+    }
+
+    .step {
+      padding: 27px;
+
+      border-radius: 20px;
+
+      background: rgba(255, 255, 255, 0.07);
+
+      border: 1px solid rgba(255, 255, 255, 0.13);
+
+      transition: 0.3s;
+    }
+
+    .step:hover {
+      transform: translateY(-6px);
+
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .num {
+      color: #62dcff;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 0.5px;
+    }
+
+    .step h3 {
+      margin: 9px 0 6px;
+
+      font-size: 19px;
+    }
+
+    .step p {
+      color: #c8d4ec;
+
+      font-size: 14px;
+    }
+
+    /* =========================
+       INDUSTRIES
+    ========================= */
+
+    .industries {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .pill {
+      padding: 12px 18px;
+
+      border-radius: 999px;
+
+      background: white;
+
+      border: 1px solid #e0e5f1;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      color: #294467;
+
+      transition: 0.25s;
+    }
+
+    .pill:hover {
+      transform: translateY(-3px);
+
+      border-color: #a8a0ff;
+
+      color: var(--purple);
+
+      box-shadow: 0 8px 25px rgba(90, 70, 200, 0.1);
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 75px 0;
+
+      background:
+        linear-gradient(
+          135deg,
+          #eef5ff,
+          #f9f0ff,
+          #fff1f7
+        );
+    }
+
+    .cta-box {
+      position: relative;
+
+      overflow: hidden;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 30px;
+
+      padding: 45px;
+
+      border-radius: 28px;
+
+      background: white;
+
+      box-shadow: var(--shadow);
+
+      border: 1px solid #ece9fa;
+    }
+
+    .cta-box::after {
+      content: "";
+
+      position: absolute;
+
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+
+      background: rgba(124, 58, 237, 0.08);
+
+      right: -80px;
+      bottom: -90px;
+    }
+
+    .cta h2 {
+      font-family: "Plus Jakarta Sans";
+
+      font-size: 35px;
+
+      color: var(--navy);
+    }
+
+    .cta p {
+      margin-top: 6px;
+
+      color: var(--muted);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #041027;
+
+      color: #b9c7df;
+
+      padding: 35px 0;
+    }
+
+    .foot {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      flex-wrap: wrap;
+
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      color: white;
+
+      font-weight: 800;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    .mobile {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+
+      .links {
+        display: none;
+      }
+
+      .mobile {
+        display: inline-flex;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .marketing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-box {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
+      }
+
+      .stat {
+        border-right: 0;
+      }
+
+      .cta-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .topbar {
+        display: none;
+      }
+
+      .navin {
+        height: 66px;
+      }
+
+      .brand {
+        font-size: 18px;
+      }
+
+      .brandmark {
+        width: 35px;
+        height: 35px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      h1 {
+        font-size: 42px;
+
+        letter-spacing: -1.8px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .cards,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .marketing-list {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-head h2,
+      .marketing-content h2,
+      .cta h2 {
+        font-size: 30px;
+      }
+
+      .visual img {
+        border-radius: 18px;
+      }
+
+      .floating-card {
+        right: 10px;
+        bottom: 15px;
+
+        font-size: 12px;
+      }
+
+      .stats-box {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 20px;
+      }
+
+      .stat strong {
+        font-size: 23px;
+      }
+
+      .cta-box {
+        padding: 30px 24px;
+      }
+
+      .foot {
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="topbar">
+    <div class="container">
+      <span>🚀 Digital Marketing • Technology • Growth</span>
+      <span>Let's grow your business online.</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+```
+<div class="container navin">
+
+  <a class="brand" href="#">
+    <span class="brandmark">B</span>
+    BARZAN TECH
+  </a>
+
+  <div class="links">
+    <a href="#services">Services</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#process">Process</a>
+    <a href="#industries">Industries</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <a
+    class="btn btn-primary mobile"
+    href="https://wa.me/917676144093?text=Hi%20Barzan%20Tech,%20I%20have%20a%20project%20idea.%20I%20would%20like%20to%20discuss%20it."
+  >
+    Get Started
+  </a>
+
+</div>
+```
+
+  </nav>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">MODERN • RELIABLE • BUSINESS-FOCUSED</span>
-          <h1>Your Vision. Our Expertise.<br><span>Digital Growth.</span></h1>
-          <p>We build modern websites, mobile apps and custom software that help businesses establish a strong digital presence, streamline operations and grow.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Discuss Your Project →</a>
-            <a class="btn" style="border:1px solid #d7e4f4;background:#fff" href="https://wa.me/917676144093?text=Hi%20I%20would%20like%20a%20free%20project%20consultation.">WhatsApp Us</a>
-          </div>
-          <div class="trust"><span>✓ Custom-built solutions</span><span>✓ Scalable technology</span><span>✓ End-to-end support</span></div>
-        </div>
-        <div class="visual">
-          <img src="advertisement-reference.jpg" alt="Barzan Tech services and digital product development">
-          <div class="badge">💡 From idea to digital product</div>
-        </div>
-      </div>
-    </section>
 
-    <section id="services">
-      <div class="container">
-        <div class="section-head"><h2>What We Build</h2><p>Practical digital solutions designed around your business goals — not just technology for technology's sake.</p></div>
-        <div class="cards">
-          <div class="card"><div class="icon">🌐</div><h3>Web Applications</h3><p>Fast, secure and user-friendly web applications built for real business needs.</p></div>
-          <div class="card"><div class="icon">🏢</div><h3>Business Websites</h3><p>Professional corporate websites that build trust and turn visitors into enquiries.</p></div>
-          <div class="card"><div class="icon">🛒</div><h3>eCommerce Platforms</h3><p>Conversion-focused online stores with smooth customer journeys and easy management.</p></div>
-          <div class="card"><div class="icon">📊</div><h3>Admin Dashboards</h3><p>Centralized dashboards and management systems to help you control your operations.</p></div>
-          <div class="card"><div class="icon">📱</div><h3>Mobile Applications</h3><p>iOS and Android applications designed for performance, usability and growth.</p></div>
-          <div class="card"><div class="icon">⚙️</div><h3>Custom Software</h3><p>Software solutions tailored to your workflow, customers and business objectives.</p></div>
-        </div>
-      </div>
-    </section>
+```
+<!-- HERO -->
 
-    <section class="dark" id="process">
-      <div class="container">
-        <div class="section-head"><h2>From Idea to Digital Product</h2><p>A clear process keeps your project focused, transparent and moving forward.</p></div>
-        <div class="process">
-          <div class="step"><div class="num">01 — DISCOVERY</div><h3>Understand</h3><p>We learn your goals, users, requirements and business challenges.</p></div>
-          <div class="step"><div class="num">02 — DESIGN</div><h3>Plan & Prototype</h3><p>We shape the user experience and create a clear solution direction.</p></div>
-          <div class="step"><div class="num">03 — DEVELOP</div><h3>Build</h3><p>Our technical team engineers, tests and refines the solution.</p></div>
-          <div class="step"><div class="num">04 — LAUNCH</div><h3>Deploy & Support</h3><p>We launch the product and support you as it grows.</p></div>
-        </div>
-      </div>
-    </section>
+<section class="hero">
 
-    <section id="industries">
-      <div class="container">
-        <div class="section-head"><h2>Who We Help</h2><p>Ideal for businesses that want to turn an idea, challenge or opportunity into a digital solution.</p></div>
-        <div class="industries">
-          <span class="pill">🚀 Startups</span><span class="pill">📈 Small & Medium Businesses</span><span class="pill">🍽️ Restaurants</span><span class="pill">🏪 Retailers</span><span class="pill">🧑‍💼 Service Businesses</span><span class="pill">🛍️ E-commerce Brands</span><span class="pill">🏢 Enterprises</span>
-        </div>
-      </div>
-    </section>
+  <div class="container hero-grid">
 
-    <section class="cta" id="contact">
-      <div class="container cta-box">
-        <div><h2>Have a Project Idea?</h2><p>Let's turn your idea into a powerful digital solution.</p></div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="https://wa.me/917676144093?text=Hi%20Digital%20Agency,%20I%20have%20a%20project%20idea.%20Please%20contact%20me.">Start a Conversation</a>
-          <a class="btn" style="background:#fff;border:1px solid #d7e4f4" href="tel:+917676144093">Call +91 76761 44093</a>
-        </div>
+    <div>
+
+      <span class="eyebrow">
+        DIGITAL MARKETING & TECHNOLOGY
+      </span>
+
+      <h1>
+        Turn Your Business
+        <br>
+        Into a
+        <span class="gradient-text">
+          Digital Brand.
+        </span>
+      </h1>
+
+      <p>
+        We help businesses grow online with digital marketing,
+        high-converting websites, social media, SEO, branding
+        and technology solutions built around real business goals.
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="btn btn-primary" href="#contact">
+          Grow My Business →
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="https://wa.me/917676144093?text=Hi%20Barzan%20Tech,%20I%20would%20like%20a%20free%20digital%20marketing%20consultation."
+        >
+          💬 WhatsApp Us
+        </a>
+
       </div>
-    </section>
+
+      <div class="trust">
+
+        <span>
+          <span class="check">✓</span>
+          Business-focused strategy
+        </span>
+
+        <span>
+          <span class="check">✓</span>
+          Creative digital solutions
+        </span>
+
+        <span>
+          <span class="check">✓</span>
+          End-to-end support
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="visual">
+
+      <img
+        src="advertisement-reference.jpg"
+        alt="Barzan Tech digital marketing services"
+      >
+
+      <div class="floating-card">
+        📈 Digital Growth
+        <small>Strategy • Marketing • Technology</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+  <div class="container">
+
+    <div class="stats-box">
+
+      <div class="stat">
+        <strong>360°</strong>
+        <span>Digital Solutions</span>
+      </div>
+
+      <div class="stat">
+        <strong>6+</strong>
+        <span>Core Services</span>
+      </div>
+
+      <div class="stat">
+        <strong>1:1</strong>
+        <span>Business Approach</span>
+      </div>
+
+      <div class="stat">
+        <strong>24/7</strong>
+        <span>Digital Presence</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="section-tag">
+        WHAT WE DO
+      </span>
+
+      <h2>
+        Everything You Need to Grow Online
+      </h2>
+
+      <p>
+        From getting your brand discovered to converting visitors
+        into customers, we build digital solutions around your
+        business objectives.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <div class="card">
+
+        <div class="icon">📱</div>
+
+        <h3>
+          Social Media Marketing
+        </h3>
+
+        <p>
+          Build a stronger social presence with creative content,
+          audience engagement and consistent brand communication.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🔍</div>
+
+        <h3>
+          SEO
+        </h3>
+
+        <p>
+          Improve your online visibility and help potential
+          customers discover your business through search engines.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🎯</div>
+
+        <h3>
+          Digital Advertising
+        </h3>
+
+        <p>
+          Create targeted online advertising campaigns designed
+          around your business goals and customer journey.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🌐</div>
+
+        <h3>
+          Business Websites
+        </h3>
+
+        <p>
+          Modern, responsive websites designed to establish trust
+          and convert visitors into enquiries.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🛒</div>
+
+        <h3>
+          eCommerce
+        </h3>
+
+        <p>
+          Build user-friendly online stores that make it easier
+          for customers to discover and purchase your products.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">✨</div>
+
+        <h3>
+          Branding & Creative
+        </h3>
+
+        <p>
+          Create a consistent visual identity with creative
+          designs, digital content and brand-focused communication.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MARKETING SECTION -->
+
+<section class="marketing" id="marketing">
+
+  <div class="container marketing-grid">
+
+
+    <div class="marketing-content">
+
+      <span class="section-tag">
+        DIGITAL GROWTH
+      </span>
+
+      <h2>
+        Your Business Deserves More Than Just a Website.
+      </h2>
+
+      <p>
+        A website is only one part of your digital presence.
+        We combine marketing, creative design and technology
+        to help businesses build visibility, credibility and
+        customer connections online.
+      </p>
+
+      <a class="btn btn-primary" href="#contact">
+        Start Growing →
+      </a>
+
+    </div>
+
+
+    <div class="marketing-list">
+
+      <div class="marketing-item">
+        <span>📈</span>
+        Growth Strategy
+      </div>
+
+      <div class="marketing-item">
+        <span>🔎</span>
+        Search Visibility
+      </div>
+
+      <div class="marketing-item">
+        <span>📱</span>
+        Social Media
+      </div>
+
+      <div class="marketing-item">
+        <span>🎯</span>
+        Lead Generation
+      </div>
+
+      <div class="marketing-item">
+        <span>🎨</span>
+        Creative Content
+      </div>
+
+      <div class="marketing-item">
+        <span>🌐</span>
+        Website Development
+      </div>
+
+      <div class="marketing-item">
+        <span>🛍️</span>
+        eCommerce
+      </div>
+
+      <div class="marketing-item">
+        <span>💡</span>
+        Digital Consulting
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="dark" id="process">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="section-tag">
+        OUR PROCESS
+      </span>
+
+      <h2>
+        From Idea to Digital Growth
+      </h2>
+
+      <p>
+        A simple and transparent approach designed to keep
+        your project focused and moving forward.
+      </p>
+
+    </div>
+
+
+    <div class="process">
+
+
+      <div class="step">
+
+        <div class="num">
+          01 — DISCOVER
+        </div>
+
+        <h3>
+          Understand
+        </h3>
+
+        <p>
+          We understand your business, audience, goals
+          and current digital challenges.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="num">
+          02 — STRATEGY
+        </div>
+
+        <h3>
+          Plan
+        </h3>
+
+        <p>
+          We create a practical digital direction based
+          on your objectives and target audience.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="num">
+          03 — CREATE
+        </div>
+
+        <h3>
+          Build
+        </h3>
+
+        <p>
+          Our team creates the website, content,
+          campaigns and digital assets.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="num">
+          04 — GROW
+        </div>
+
+        <h3>
+          Improve
+        </h3>
+
+        <p>
+          We monitor, refine and support your digital
+          presence as your business grows.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section id="industries">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="section-tag">
+        WHO WE WORK WITH
+      </span>
+
+      <h2>
+        Built for Ambitious Businesses
+      </h2>
+
+      <p>
+        Digital solutions for businesses looking to improve
+        their online presence and connect with more customers.
+      </p>
+
+    </div>
+
+
+    <div class="industries">
+
+      <span class="pill">🚀 Startups</span>
+
+      <span class="pill">📈 Small Businesses</span>
+
+      <span class="pill">🏢 Corporate</span>
+
+      <span class="pill">🍽️ Restaurants</span>
+
+      <span class="pill">🏪 Retail</span>
+
+      <span class="pill">🧑‍💼 Service Businesses</span>
+
+      <span class="pill">🛍️ eCommerce Brands</span>
+
+      <span class="pill">🏗️ Real Estate</span>
+
+      <span class="pill">🎓 Education</span>
+
+      <span class="pill">🏥 Healthcare</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <div>
+
+        <span class="section-tag">
+          LET'S WORK TOGETHER
+        </span>
+
+        <h2>
+          Ready to Grow Your Business Online?
+        </h2>
+
+        <p>
+          Tell us about your business or project.
+          Let's discuss how we can help.
+        </p>
+
+      </div>
+
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/917676144093?text=Hi%20Barzan%20Tech,%20I%20have%20a%20project%20idea.%20Please%20contact%20me."
+        >
+          💬 Start a Conversation
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="tel:+917676144093"
+        >
+          📞 Call Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
   </main>
 
-  <footer><div class="container foot"><span>© 2026 Barzan Tech. All rights reserved.</span><span>Ideas | Design | Development | Growth</span></div></footer>
+  <!-- FOOTER -->
+
+  <footer>
+
+```
+<div class="container foot">
+
+  <span>
+    © 2026 <span class="footer-brand">Barzan Tech</span>.
+    All rights reserved.
+  </span>
+
+  <span>
+    Digital Marketing | Design | Development | Growth
+  </span>
+
+</div>
+```
+
+  </footer>
+
 </body>
 </html>
